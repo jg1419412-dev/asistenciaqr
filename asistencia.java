@@ -1,13 +1,13 @@
 import java.util.Date;
 
-public class asistemcia {
+public class asistencia {
     private alumno nombreAlumno;
     private Date fecha;
 
-    public asistemcia(alumno nombreAlumno)
+    public asistencia(alumno nombreAlumno)
     {
         this.nombreAlumno=nombreAlumno;
-        this.fecha=fecha;
+        this.fecha=new Date();
 
     }
     public void mostrarAsistencia()

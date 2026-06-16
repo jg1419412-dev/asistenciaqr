@@ -19,4 +19,7 @@ public List<alumno> getAlumnos()
 {
     return alumnos;
 }
+public String getGrupo(){
+    return nombreGrupo;
+}
 }
