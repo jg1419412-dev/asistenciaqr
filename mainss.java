@@ -1,11 +1,9 @@
 public class mainss {
     public static void main(String[] args) {
-        docente ticher=new docente("bomaye", "chalan", 955);
-        ticher.getNumEmpleado();
-        System.out.println(ticher.getNumEmpleado());
-        ticher.getNombre();
-        System.out.println(ticher.getNombre());
-        ticher.getRol();
-        System.out.println(ticher.getRol());
+     docente profesor=new docente("cuitla", "Maestro", 666);
+
+     System.out.println("-----------------docente Registrado-----------------------");
+     System.out.println("nombre : "+ profesor.nombre);
+     System.out.println("No.empleao:"+profesor.getNumEmpleado());   
     }
 }
