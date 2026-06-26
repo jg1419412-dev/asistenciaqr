@@ -24,11 +24,18 @@ public class sistemaAsistencia {
     }
     public void registrarAsistencia(String codigoQR){
         for (alumno a : alumnos){
-            if(a.getQR().validar(codigoQR)){
-                
+            if(a.getQR().equals(codigoQR)){
+             asistencia asis=new asistencia(a);
+             asistencias.add(asis);  
+             
+             System.out.println("Asistencia registrada para:  "+a.getNombre());
+             return;
             }
 
         }
-
+                System.out.println("el codigo qr no es valido");
+    }
+    public List<asistencia> gAsistencias(){
+        return asistencias;
     }
 }

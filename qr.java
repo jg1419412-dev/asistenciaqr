@@ -1,12 +1,13 @@
 public class qr {
-    private qr codigoQr;
+    
+    private String codigoQr;
 
-    public qr(qr codigoQR)
+    public qr (String codigoQR)
     {
         this.codigoQr=codigoQR;
     }
 
-    public qr getQString(){
+    public String getQString(){
         return codigoQr;
     }
     public boolean validar(String codigoIngresado)
